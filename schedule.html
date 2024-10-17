@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" />
+    <title>Schedule</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-link">
+                <ul>
+                    <img src="images/logo.png" class="logo"/>
+                    <li><a href="index.html"><b class="home">HOME</b></a></li>
+                    <li><a href="aboutus.html"><b class="about-us">ABOUT US</b></a></li>
+                    <li><a href="contact.html"><b class="contact-us">CONTACT US</b></a></li>
+                    <li><a href="schedule.html"><b class="schedule">SCHEDULE</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+
+    <!-- Mobile nav and burger menu start -->
+    <div class="burger" onclick="menu()">
+        &#9776;
+
+    </div>
+
+    <header class="mobile-nav" id="mobile-nav" style="display: none;">
+    <div class="container">
+        <nav>
+            <div class="nav-links">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+            <ul>
+                <li><a href="index.html"><b class="home">HOME</b></a></li>
+                <li><a href="aboutus.html"><b class="about-us">ABOUT US</b></a></li>
+                <li><a href="contact.html"><b class="contact-us">CONTACT US</b></a></li>
+                <li><a href="schedule.html"><b class="schedule">SCHEDULE</b></a></li>
+            </ul>
+            </div>
+    
+        </nav> <!-- Mobile nav end -->
+    </div>
+</header>
+
+    <div class="tablet-gallery"> <!--- Start of Tablet gallery -->
+        <div class="image-gallery1">
+            <img src="images/dronelights.jpg" alt="Drone Lights" class="schedule-img" onclick="openModal(this);" />
+            <b>DRONE LIGHT SHOW 5:30 AM</b>
+        </div>
+
+        <div class="image-gallery2">
+            <img src="images/openingceremony.jfif" alt="Opening Ceremony" class="schedule-img" onclick="openModal(this);" />
+            <b>OPENING CEREMONY 6:10 AM</b>
+        </div>
+
+        <div class="image-gallery3">
+            <img src="images/hotairballoon.png" alt="Hot Air Balloons" class="schedule-img" onclick="openModal(this);" />
+            <b>MASS ASCENSION 7:00 AM</b>
+        </div>
+    </div> <!-- End of tablet gallery -->
+        
+    <div class="gallery">
+        <div class="image-gallery1">
+            <img src="images/dronelights.jpg" alt="Drone Lights" onclick="openModal(this);" />
+            <b>DRONE LIGHT SHOW</b>
+            <div class="time-input">
+                <div class="minutes">
+                    <div class="timecontainer">
+                        <div class="hour-hint-text">5</div>
+                    </div>
+                </div>
+                <div class="minutes">
+                    <div class="timecontainer">
+                      <div class="hour-hint-text">30</div>
+                    </div>
+                </div>
+                <div class="am-pm">
+                    <div class="am">
+                      <div class="label">AM</div>
+                      <div>
+                      </div>
+                    </div>
+                    <div class="pm">
+                      <div class="label">PM</div>
+                      <div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-gallery2">
+            <img src="images/openingceremony.jfif" alt="Opening Ceremony" onclick="openModal(this);" />
+            <b>OPENING CEREMONY</b>
+            <div class="time-input1">
+                <div class="minutes">
+                      <div class="timecontainer">
+                            <div class="hour-hint-text">6</div>
+                      </div>
+                </div>
+                <div class="minutes">
+                      <div class="timecontainer">
+                            <div class="hour-hint-text">10</div>
+                      </div>
+                </div>
+                <div class="am-pm">
+                      <div class="am">
+                            <div class="label">AM</div>
+                            <div>
+                            </div>
+                      </div>
+                      <div class="pm">
+                            <div class="label">PM</div>
+                            <div>
+                            </div>
+                      </div>
+                </div>
+          </div>
+          </div>
+
+        <div class="image-gallery3">
+            <img src="images/hotairballoon.png" alt="Hot Air Balloons" onclick="openModal(this);" />
+            <b>MASS ASCENSION</b>
+            <div class="time-input1">
+                <div class="minutes">
+                      <div class="timecontainer">
+                            <div class="hour-hint-text">7</div>
+                      </div>
+                </div>
+                <div class="minutes">
+                      <div class="timecontainer">
+                            <div class="hour-hint-text">00</div>
+                      </div>
+                </div>
+                <div class="am-pm">
+                      <div class="am">
+                            <div class="label">AM</div>
+                            <div>
+                            </div>
+                      </div>
+                      <div class="pm">
+                            <div class="label">PM</div>
+                            <div>
+                            </div>
+                      </div>
+                </div>
+          </div>
+        </div>
+    </div> 
+    
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+    <script src="script.js">
+
+    </script>
+    <script src="script.js"></script> 
+    <footer>
+		<img class="footer" alt="footer" src="images/footer2.png">
+        <b class="copyright">© Copyright 2024. All rights reserved. </b>
+    </footer>
+</div>
+
+</body>
+</html>
